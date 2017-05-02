@@ -123,10 +123,7 @@ auth_method:
   - {{ auth_method }}
 {%- endfor %}
 
-{%- if 'anonymous' in env.get('EJABBERD_AUTH_METHOD', 'internal').split() %}
-anonymous_protocol: login_anon
-allow_multiple_connections: true
-{%- endif %}
+
 
 
 ## LDAP authentication
